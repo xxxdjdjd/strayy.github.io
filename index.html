@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stray | archives</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #0d0d0d;
+            color: #e6e6e6;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 100px 5%;
+        }
+
+        header { margin-bottom: 120px; max-width: 650px; }
+        h1 { font-size: 2rem; font-weight: 500; color: #ffffff; margin-bottom: 16px; }
+        .bio { font-size: 1.2rem; color: #888; font-weight: 300; }
+
+        /* Masonry-style Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 40px;
+        }
+
+        .work-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .work-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s;
+            opacity: 0.8;
+        }
+
+        .work-item:hover img {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .work-caption {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        footer { margin-top: 150px; color: #444; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>stray</h1>
+        <p class="bio">Feminist. Traveler. Curious soul documenting the fragments of the world.</p>
+    </header>
+
+    <div class="gallery">
+        <div class="work-item">
+            <img src="wallhaven-9okqr8_3840x2160.png" alt="Travel Capture">
+            <div class="work-caption">Fragment I</div>
+        </div>
+        <div class="work-item">
+            <img src="wallhaven-7jm1qy_1920x1080.png" alt="Travel Capture">
+            <div class="work-caption">Fragment II</div>
+        </div>
+        <div class="work-item">
+            <img src="wallhaven-og7865_1920x1080.png" alt="Travel Capture">
+            <div class="work-caption">Fragment III</div>
+        </div>
+        <div class="work-item">
+            <img src="wallhaven-po5lq9_1920x1080.png" alt="Travel Capture">
+            <div class="work-caption">Fragment IV</div>
+        </div>
+        <div class="work-item">
+            <img src="wallhaven-yqkwv7_1920x1080.png" alt="Travel Capture">
+            <div class="work-caption">Fragment V</div>
+        </div>
+        <div class="work-item">
+            <img src="wallhaven-lyg12l_1920x1080.png" alt="Travel Capture">
+            <div class="work-caption">Fragment VI</div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="margin-bottom: 20px;">
+            <a href="https://www.instagram.com/cantfwstray/" target="_blank" style="color: #888; text-decoration: none; margin-right: 20px; transition: color 0.3s;">Instagram</a>
+            <a href="#" style="color: #888; text-decoration: none; margin-right: 20px; transition: color 0.3s;">Email</a>
+        </div>
+        &copy; 2026 stray. all rights reserved.
+    </footer>
+
+    <style>
+        footer a:hover { color: #fff !important; }
+    </style>
+</body>
+</html>
